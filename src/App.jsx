@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import './App.css'
 import SearchBar from './components/SearchBar.jsx'
 import RecipeList from './components/RecipeList.jsx'
-import VegetablePricesChart from './components/VegetablePricesChart.jsx'
 import { recipes as allRecipes, searchRecipes } from './data/recipes.js'
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
           servingsById={servingsById}
           onChangeServings={handleChangeServings}
         />
-        <VegetablePricesChart />
       </main>
       <footer className="footer">
         <small>Tip: Search by recipe, ingredient, or tag (e.g., "vegetarian").</small>
